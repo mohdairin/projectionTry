@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-projection" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>Projection</name>
+    
+    <js-module name="Projection" src="www/Projection.js">
+        <clobbers target="Projection" />
+    </js-module>
+    
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Projection">
+                <param name="android-package" value="cordova.plugin.projection.Projection" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Projection.java" target-dir="src/cordova/plugin/projection/Projection" />
+
+        <source-file src="src/android/action/ProjectionAction_14_15.java" target-dir="src/cordova/plugin/projection/Projection/action" />
+        <source-file src="src/android/action/ProjectionAction_24.java" target-dir="src/cordova/plugin/projection/Projection/action" />
+        <source-file src="src/android/action/ProjectionAction.java" target-dir="src/cordova/plugin/projection/Projection/action" />
+        <source-file src="src/android/action/PensionPayoutAction.java" target-dir="src/cordova/plugin/projection/Projection/action" />
+        <source-file src="src/android/action/ProductCashFlowAction.java" target-dir="src/cordova/plugin/projection/Projection/action" />
+
+        <source-file src="src/android/dto/PlanMortalityTableDto.java" target-dir="src/cordova/plugin/projection/Projection/dto" />
+        <source-file src="src/android/dto/PlanSvTableDto.java" target-dir="src/cordova/plugin/projection/Projection/dto" />
+        <source-file src="src/android/dto/PremAllocTableDto.java" target-dir="src/cordova/plugin/projection/Projection/dto" />
+        <source-file src="src/android/dto/ProjectionDto.java" target-dir="src/cordova/plugin/projection/Projection/dto" />
+        
+        <source-file src="src/android/pojo/PlanMortalityTable.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/PlanSvTable.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/PremAllocTable.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/oProjection.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/Projection14_15.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/AnnuityPayment.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/ProductCashFlow.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+        <source-file src="src/android/pojo/Projection24.java" target-dir="src/cordova/plugin/projection/Projection/pojo" />
+
+        
+        <source-file src="src/android/sqlite/DBManager.java" target-dir="src/cordova/plugin/projection/Projection/sqlite" />
+        <source-file src="src/android/sqlite/SQLiteHelper.java" target-dir="src/cordova/plugin/projection/Projection/sqlite" />
+        
+        <source-file src="src/android/util/Query.java" target-dir="src/cordova/plugin/projection/Projection/util" />
+        
+    </platform>
+</plugin>

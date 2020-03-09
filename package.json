@@ -1,0 +1,17 @@
+{
+  "name": "Projection",
+  "version": "0.0.1",
+  "description": "Projection Calculation",
+  "cordova": {
+    "id": "cordova-plugin-projection",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Aetins Sdn Bhd",
+  "license": "ISC"
+}
